@@ -21,7 +21,7 @@ body p{
 
 .bar{
   position: fixed;
-  padding: 40px;
+  padding: 16px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -29,30 +29,30 @@ body p{
   z-index: 1;
 }
 
-/*#links{
-  background-color: Red;
-  padding: 40px;
-  width: 60%;
+.bar-links{
+  width: 50%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-#links a{
-  background-color: Green;
+.bar-links a{
   text-decoration: none;
   color: White;
 }
 
-#links a:hover { 
+.bar-links a:hover { 
   text-decoration: underline;
   color: blue;
-}*/
+}
 
 .bg2{
   position: relative;
-  background-image: url(C:/Users/scoo_/Desktop/restaurant-v2/img/sakura-bg2.png);
+  background-image: url(C:/Users/scoo_/Documents/GitHub/sakura-ramen-website/img/sakura-bg2.png);
   background-color: #cccccc;
   height: 1024px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg2-text{
@@ -84,10 +84,11 @@ body p{
 }
 
 
-.menu-bg{
+#menu-bg{
   position: relative;
-  background-image: url(C:/Users/scoo_/Desktop/restaurant-v2/img/menu-bg.png);
+  background-image: url(C:/Users/scoo_/Documents/GitHub/sakura-ramen-website/img/menu-bg.png);
   background-color: #cccccc;
+  background-position: center;
   height: 1400px;
 }
 
@@ -116,30 +117,28 @@ body p{
   text-align: left;
 }
 
-.info{
+#info{
   line-height: 0px;
 }
 
-/*#footer{
-  
-  padding: 20px;
+#footer{
+  padding: 16px;
   display: flex;
   justify-content: space-between;
-  height: 60%;
+  align-items: center;
 }
 
-.footer-child{
-  
-  display: flex;
-  justify-content: space-between;
-  
-}
-
-#social-media{
-  width: 40%;
-}
-
-#logo p{
+.footer-logo{
   color: red;
-  
-}*/
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-buttons{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
