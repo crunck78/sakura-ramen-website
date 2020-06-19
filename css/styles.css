@@ -13,58 +13,75 @@ body h2{
   /*line-height: 0px;*/
 }
 
-body p{
-  font-size: 26px;
-  font-style: bold;
-  text-align: center;
-}
-
-.bar{
+.navigation-bar{
   position: fixed;
   padding: 16px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
 }
 
-.bar-links{
+.navigation-bar-logo{
+  width: 50px;
+}
+
+.navigation-links{
   width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.bar-links a{
+.navigation-links a{
   text-decoration: none;
   color: White;
+  border-bottom: 2px solid transparent;
+  transition: all 225ms ease-in-out;
 }
 
-.bar-links a:hover { 
-  text-decoration: underline;
-  color: blue;
+.navigation-links a:hover {
+  border-bottom: 2px solid White;
+  transition: all 225ms ease-in-out;
 }
 
-.bg2{
+/*.phone-button{
+  border: 5px solid White;
+  background-color: Red;
+  padding: 5px;
+}*/
+
+.header{
   position: relative;
-  background-image: url(http://mihai-andrei-neacsu.developerakademie.com/sakura-ramen-website/img/sakura-bg2.png);
   background-color: #cccccc;
-  height: 1024px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
+  height: 1024;
+  position: center;
+  object-fit: cover;
 }
 
-.bg2-text{
-  width: 100vw;
+.header-content{
   text-align: center;
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 200px;
+  left: 0;
+  right: 0;
+  height: 1024px;
   color: white;
   line-height: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content h1{
+  font-size: 80px;
+}
+
+.header-content p{
+  font-size: 18px;
 }
 
 .order{
@@ -80,10 +97,8 @@ body p{
   color: Black;
   font-style: bold;
   font-size: 30px;
-  width: auto;
   text-align: center;
 }
-
 
 #menu-bg{
   position: relative;
