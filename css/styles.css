@@ -4,6 +4,7 @@ html{
 
 body{
   margin: 0px;
+  font-family: 'Raleway', sans-serif;
 }
 
 body h2{
@@ -70,6 +71,7 @@ body h2{
 
 .header-content{
   text-align: center;
+  
   position: absolute;
   top: 20%;
   left: 0;
@@ -141,6 +143,7 @@ body h2{
 
 .menu table caption{
   text-align: left;
+  font-family: 'Economica', sans-serif;
 }
 
 .info{
