@@ -11,8 +11,8 @@ body{
 
 .section-titles{
   text-align: center;
-  color: orangered;
-  font-size: 5vw;
+  color: darkred;
+  font-size: 7vw;
 }
 
 .navigation-bar{
@@ -63,11 +63,9 @@ body{
 }
 
 .header{
-  padding: 0.5vw;
   position: relative;
   width: 100vw;
-  height: 100%;
-  background-color: #cccccc;
+  background-color: white;
 }
 
 .header-image{
@@ -80,25 +78,25 @@ body{
   width: 100%;
   height: fit-content;
   position: absolute;
-  top: 20vh;
+  top: 25%;
   left: 0;
   right: 0;
   color: white;
   line-height: 0;
   text-align: center;
-  
 }
 
 .header-content h1{
+  font-family: 'Raleway Bold 700', sans-serif;
   font-size: 7.7vw;
 }
 
 .header-content p{
- font-size: 1.8vw;
+  font-family: 'Raleway Regular 400', sans-serif;
+  font-size: 1.8vw;
 }
 
 .order{
-  padding: 0.5vw;
   width: 100vw;
   height: 100%;
   display: flex;
@@ -107,14 +105,14 @@ body{
 }
 
 .orders{
-  padding: 0.5vw;
+  padding: 10vw;
   display:flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
 .order-child{
-  padding: 5vw;
+  font-family: 'Raleway Bold 700', sans-serif;
   font-size: 3vw;
   color: Black;
   text-align: center;
@@ -123,15 +121,10 @@ body{
 .order-image{
   width: 10vw;
   height: 50%;
-  object-fit: fill;
-}
-
-.order-text{
-  background-color: lawngreen;
+  object-fit: contain;
 }
 
 .menu{
-  padding: 0.5vw;
   width: 100vw;
   height: 100%;
   background-color: #cccccc;
@@ -139,16 +132,15 @@ body{
 }
 
 .menu-bg{
+  width: 100%;
+  height: 100%;
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .menu-content{
-  padding: 0.5vw;
-  width: inherit;
-  height: 100vh;
+  width: 100%;
+  height: fit-content;
   position: absolute;
   top: 0;
   left: 0;
@@ -160,24 +152,27 @@ body{
 
 .menu-item{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .menu-img{
-  
-  object-fit: contain;
+  width: 30vw;
+  height: 30vw;
+  object-fit: fill;
 }
 
 .menu table{
-  width: fit-content;
+  width: 50%;
   font-size: 3vw;
+  color: grey;
 }
 
 .menu table caption{
   text-align: left;
   font-family: 'Economica', sans-serif;
   font-size: 5vw;
+  line-height: 0;
+  color: black;
 }
 
 .info{
