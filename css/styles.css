@@ -5,20 +5,20 @@ html{
 }
 
 body{
-  margin: 0px;
+  margin: 0;
   font-family: 'Raleway', sans-serif;
 }
 
-body h2{
+.section-titles{
   text-align: center;
   color: orangered;
-  font-size: 80px;
+  font-size: 5vw;
 }
 
 .navigation-bar{
   position: fixed;
-  height: 30px;
-  padding: 16px;
+  height: fit-content;
+  padding: 0.5vw;
   display: flex;
   justify-content: space-between;
   background-color: rgba(0,0,0,0.5);
@@ -26,62 +26,67 @@ body h2{
   left: 0;
   right: 0;
   z-index: 1;
+  align-items: center;
 }
 
 .navigation-bar-logo{
-  width: 30px;
-  height: 30px;
+  width: 2vw;
+  height: 2vw;
 }
 
 .navigation-links{
   width: 50vw;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .navigation-links a{
+  font-size: 1vw;
   text-decoration: none;
   color: White;
-  border-bottom: 2px solid transparent;
+  border-bottom:  solid transparent;
   transition: all 225ms ease-in-out;
 }
 
 .navigation-links a:hover {
-  border-bottom: 2px solid White;
+  border-bottom: 0.1vw solid White;
   transition: all 225ms ease-in-out;
 }
 
 #phone-button{
-  border: 5px solid White;
-  border-radius: 5px;
+  border: 0.2vw solid White;
+  border-radius: 0.2vw;
   background-color: Red;
-  padding: 5px;
+  padding: 0.2vw;
 }
 
 .header{
+  padding: 0.5vw;
   position: relative;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
   background-color: #cccccc;
 }
 
 .header-image{
   width: 100%;
-  height: inherit;
-  object-fit: cover;
+  height: 100%;
+  object-fit: fill;
 }
 
 .header-content{
   width: 100%;
   height: fit-content;
   position: absolute;
-  top: 20%;
+  top: 20vh;
   left: 0;
   right: 0;
   color: white;
   line-height: 0;
   text-align: center;
+  
 }
 
 .header-content h1{
@@ -93,68 +98,106 @@ body h2{
 }
 
 .order{
-  padding: 40px;
+  padding: 0.5vw;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.orders{
+  padding: 0.5vw;
   display:flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
 .order-child{
-  width: 100%;
-  height: 300px;
+  padding: 5vw;
+  font-size: 3vw;
   color: Black;
-  font-size: 30px;
   text-align: center;
 }
 
+.order-image{
+  width: 10vw;
+  height: 50%;
+  object-fit: fill;
+}
+
+.order-text{
+  background-color: lawngreen;
+}
+
 .menu{
-  position: relative;
+  padding: 0.5vw;
+  width: 100vw;
+  height: 100%;
   background-color: #cccccc;
+  position: relative;
 }
 
 .menu-bg{
-  width: 100%;
-  object-fit: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
 }
 
 .menu-content{
-  padding: 40px;
+  padding: 0.5vw;
+  width: inherit;
+  height: 100vh;
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-item{
-  padding:10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
 .menu-img{
-  width: 30%;
-  object-fit: cover;
+  
+  object-fit: contain;
 }
 
 .menu table{
-  width: 50%;
-  font-size: 50px;
+  width: fit-content;
+  font-size: 3vw;
 }
 
 .menu table caption{
   text-align: left;
   font-family: 'Economica', sans-serif;
+  font-size: 5vw;
 }
 
 .info{
-  line-height: 0px;
-  font-size: 30px;
+  width: 100vw;
+  height: fit-content;
+  line-height: 0;
+  font-size: 2vw;
   text-align: center;
 }
 
+.info-image{
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+}
+
 .footer{
-  padding: 16px;
+  width: 100vw;
+  height: fit-content;
+  padding: 1vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,14 +205,16 @@ body h2{
 
 .footer-logo{
   color: red;
-  width: 30%;
+  width: 2vw;
+  height: 2vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .footer-buttons{
-  width: 30%;
+  width: 2vw;
+  height: 2vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
