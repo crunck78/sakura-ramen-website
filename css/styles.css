@@ -1,27 +1,25 @@
-
-
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
 
-.section-titles{
+.section-titles {
   text-align: center;
   color: darkred;
-  font-size: 7vw;
+  font-size: 6vw;
 }
 
-.navigation-bar{
+.navigation-bar {
   position: fixed;
   height: fit-content;
   padding: 0.5vw;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
   right: 0;
@@ -29,24 +27,25 @@ body{
   align-items: center;
 }
 
-.navigation-bar-logo{
-  width: 2vw;
-  height: 2vw;
+.navigation-bar-logo {
+  width: 4vw;
+  height: 4vw;
+  object-fit: contain;
 }
 
-.navigation-links{
-  width: 50vw;
+.navigation-links {
+  width: 50%;
   height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navigation-links a{
-  font-size: 1vw;
+.navigation-links a {
+  font-size: 1.5vw;
   text-decoration: none;
   color: White;
-  border-bottom:  solid transparent;
+  border-bottom: solid transparent;
   transition: all 225ms ease-in-out;
 }
 
@@ -55,26 +54,27 @@ body{
   transition: all 225ms ease-in-out;
 }
 
-#phone-button{
+#phone-button {
   border: 0.2vw solid White;
   border-radius: 0.2vw;
   background-color: Red;
   padding: 0.2vw;
 }
 
-.header{
+.header {
   position: relative;
   width: 100vw;
+  height: fit-content;
   background-color: white;
 }
 
-.header-image{
+.header-image {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
 
-.header-content{
+.header-content {
   width: 100%;
   height: fit-content;
   position: absolute;
@@ -86,59 +86,58 @@ body{
   text-align: center;
 }
 
-.header-content h1{
+.header-content h1 {
   font-family: 'Raleway Bold 700', sans-serif;
   font-size: 7.7vw;
 }
 
-.header-content p{
+.header-content p {
   font-family: 'Raleway Regular 400', sans-serif;
   font-size: 1.8vw;
 }
 
-.order{
+.order {
   width: 100vw;
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.orders{
-  padding: 10vw;
-  display:flex;
+.orders {
+  padding: 6vw;
+  display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.order-child{
+.order-child {
   font-family: 'Raleway Bold 700', sans-serif;
   font-size: 3vw;
   color: Black;
   text-align: center;
 }
 
-.order-image{
+.order-image {
   width: 10vw;
   height: 50%;
   object-fit: contain;
 }
 
-.menu{
+.menu {
   width: 100vw;
   height: 100%;
-  background-color: #cccccc;
   position: relative;
 }
 
-.menu-bg{
+.menu-bg {
   width: 100%;
   height: 100%;
   position: relative;
   object-fit: cover;
 }
 
-.menu-content{
+.menu-content {
   width: 100%;
   height: fit-content;
   position: absolute;
@@ -150,66 +149,66 @@ body{
   justify-content: space-between;
 }
 
-.menu-item{
+.menu-item {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
-.menu-img{
-  width: 30vw;
-  height: 30vw;
+.menu-img {
+  width: 29vw;
+  height: 29vw;
   object-fit: fill;
 }
 
-.menu table{
+.menu table {
   width: 50%;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: grey;
+  border-spacing: 0;
 }
 
-.menu table caption{
+.menu table caption {
   text-align: left;
   font-family: 'Economica', sans-serif;
-  font-size: 5vw;
+  font-size: 4.5vw;
   line-height: 0;
   color: black;
 }
 
-.info{
+.info {
   width: 100vw;
-  height: fit-content;
+  height: 100%;
   line-height: 0;
   font-size: 2vw;
   text-align: center;
 }
 
-.info-image{
-  width: 100vw;
-  height: 100vh;
+.map-image {
+  width: 100%;
+  height: 100%;
   object-fit: fill;
 }
 
-.footer{
-  width: 100vw;
+.footer {
   height: fit-content;
-  padding: 1vw;
+  padding: 0.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-logo{
+.footer-logo {
+  width: 20%;
   color: red;
-  width: 2vw;
-  height: 2vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  font-size: 1.5vw;
 }
 
-.footer-buttons{
-  width: 2vw;
-  height: 2vw;
+.footer-buttons {
+  width: 20%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
