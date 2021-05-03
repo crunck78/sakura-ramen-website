@@ -4,37 +4,49 @@ html {
 
 body {
   margin: 0;
+}
+
+.raleway{
   font-family: 'Raleway', sans-serif;
 }
 
+.economica{
+  font-family: 'Economica', sans-serif;
+}
+
+.section {
+  width: calc(100vw - 145px);
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .section-titles {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: darkred;
-  font-size: 6vw;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .navigation-bar {
-  position: fixed;
-  height: fit-content;
-  padding: 0.5vw;
+  /* padding: 0.5vw; */
+  position: absolute;
   display: flex;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
   align-items: center;
 }
 
-.navigation-bar-logo {
-  width: 3vw;
-  height: 3vw;
+.logo {
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
 .navigation-links {
-  width: 50%;
+  /* width: 50%; */
   height: fit-content;
   display: flex;
   justify-content: space-between;
@@ -42,7 +54,8 @@ body {
 }
 
 .navigation-links a {
-  font-size: 1vw;
+  /* font-size: 1vw; */
+  font-weight: bold;
   text-decoration: none;
   color: White;
   border-bottom: solid transparent;
@@ -50,45 +63,49 @@ body {
 }
 
 .navigation-links a:hover {
-  border-bottom: 0.1vw solid White;
+  border-bottom: 2px solid White;
   transition: all 225ms ease-in-out;
 }
 
 #phone-button {
-  border: 0.2vw solid White;
-  border-radius: 0.2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid White;
+  border-radius: 5px;
   background-color: Red;
-  padding: 0.2vw;
+  padding: 5px;
+}
+
+#phone-button img{
+  width: 20px;
+  height: 20px;
 }
 
 .header {
-  position: relative;
-  width: 100vw;
-  height: fit-content;
-  background-color: white;
-}
-
-.header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+  background-image: url("../img/bgr1.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 32px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-content {
-  width: 100%;
-  height: fit-content;
-  position: absolute;
-  top: 25%;
-  left: 0;
-  right: 0;
+  /* position: relative;
+  top: -150px; */
   color: white;
   line-height: 0;
   text-align: center;
 }
 
 .header-content-2 {
-  height: 5vw;
-  font-size: 1vw;
+  /* height: 5vw;
+  font-size: 1vw; */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -101,65 +118,53 @@ body {
 }
 
 .header-content h1 {
-  font-family: 'Raleway Bold 700', sans-serif;
-  font-size: 7.7vw;
+  font-weight: bold;
+  font-size: 100px;
 }
 
 .header-content p {
-  font-family: 'Raleway Regular 400', sans-serif;
-  font-size: 1.8vw;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .order {
   background-color: white;
-  width: 100vw;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .orders {
-  padding: 6vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.order-text{
+
 }
 
 .order-child {
-  font-family: 'Raleway Bold 700', sans-serif;
-  font-size: 3vw;
+  /* font-size: 3vw; */
   color: Black;
   text-align: center;
+  margin: 16px;
 }
 
 .order-image {
-  width: 10vw;
-  height: 50%;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 
 .menu {
-  background-color: white;
-  width: 100vw;
-  height: 100%;
-  position: relative;
-}
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.menu-bg {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  object-fit: cover;
-}
-
-.menu-content {
-  width: 100%;
-  height: fit-content;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,73 +172,124 @@ body {
 
 .menu-item {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
+  margin-bottom: 64px;
 }
 
-.menu-img {
-  width: 29vw;
-  height: 29vw;
-  object-fit: fill;
+.menu-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  /* flex-grow: 1; */
 }
 
-.menu table {
-  width: 50%;
-  font-size: 2.5vw;
+.menu-item table{
+  /* display: inline-block; */
+  flex-grow: 0.5;
+}
+
+.menu-item table tbody{
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
   color: grey;
-  border-spacing: 0;
+  font-size: xx-large;
+  /* width: 480px;
+  height: 125px;
+ 
+  border-spacing: 0; */
 }
 
-.menu table caption {
+.menu-item table tbody tr td:last-child{
+  text-align: right;
+}
+
+.menu-item table caption p{
+  font-family: "Economica", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
   text-align: left;
-  font-family: 'Economica', sans-serif;
-  font-size: 4.5vw;
-  line-height: 0;
-  color: black;
+  margin-top: 0;
 }
 
 .info {
   background-color: white;
-  width: 100vw;
-  height: 100%;
   line-height: 0;
-  font-size: 2vw;
   text-align: center;
+}
+
+.info p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .map-image {
   width: 100%;
-  height: 100%;
-  object-fit: fill;
+  object-fit: contain;
 }
 
 .footer {
   background-color: white;
-  position: relative;
-  height: fit-content;
-  padding: 0.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 3;
-  width: 99vw;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .footer-logo {
-  width: 20%;
   color: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5vw;
+  /* font-size: 1.5vw; */
 }
 
 .footer-buttons {
-  width: 20%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+
+.footer-buttons a {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo{
+  height: 40px;
+}
+
+.ml-32 {
+  margin-left: 32px;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.w-30{
+  width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .header-content h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* .orders{
+    flex-direction: column;
+    align-items: center;
+  } */
 }

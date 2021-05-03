@@ -4,38 +4,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SAKURA RAMEN</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Raleway:wght@400;700&display=swap"
+		rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<div class="navigation-bar">
-		<img src="img/sakura-logo1.png" class="navigation-bar-logo">
-		<nav class="navigation-links">
-			<a href="#menu-link">MENU</a>
-			<a href="#info-link">LOCATION</a>
-			<a href="#footer-link">ABOUT</a>
-			<a id="phone-button" href="tel:+49(0)1765456534">Tel:0176 54564534</a>
+	<div class="navigation-bar section">
+		<img src="img/saku.png" class="logo">
+		<nav class="navigation-links raleway">
+			<a class="ml-12" href="#menu-link">MENU</a>
+			<a class="ml-12" href="#info-link">LOCATION</a>
+			<a class="ml-12" href="#footer-link">ABOUT</a>
+			<a class="ml-12" id="phone-button" href="tel:+49(0)1765456534"><img class="mr-12" src="img/phone.png">0176
+				54564534</a>
 		</nav>
 	</div>
 
-	<div class="header-content-2">
-		<p>FIND MORE</p>
-	<a href=""><img src="img/arrow-211-64.png" alt="arrow-down" class="navigation-bar-logo"></a>
-	</div>
-
-	<div class="header">
-		<div class="header-content">
+	<div class="header section">
+		<!-- <img class="header-image" src="img/sakura-bg2.png"> -->
+		<div class="header-content raleway">
 			<h1>SAKURA RAMEN</h1>
 			<p>THE BEST RAMEN IN TOWN</p>
 		</div>
-		<img class="header-image" src="img/sakura-bg2.png">
+
+		<!-- <div class="header-content-2">
+			<p>FIND MORE</p>
+		<a href=""><img src="img/arrow-211-64.png" alt="arrow-down" class="navigation-bar-logo"></a>
+		</div> -->
 	</div>
 
-	<div class="order">
+	<div class="order section">
 		<h2 class="section-titles">HOW TO ORDER</h2>
-		<div class="orders">
+		<div class="orders economica">
 			<div class="order-child">
 				<img src="img/picknoodle-icon.png" alt="Noodle" class="order-image">
 				<p class="order-text">Pick<br>Your Noodle</p>
@@ -51,16 +53,17 @@
 		</div>
 	</div>
 
-	<div id="menu-link" class="menu">
-		<img class="menu-bg" src="img/menu-bg.png">
-		<div class="menu-content">
-			<h2 class="section-titles">OUR MENU</h2>
-			<div class="menu-item">
-				<img class="menu-img" src="img/ramen-2.png">
-				<table title="Tonkasu Ramen">
-					<caption>
-						<h3>Tonkasu Ramen</h3>
-					</caption>
+	<div id="menu-link" class="menu section">
+		<!-- <img class="menu-bg" src="img/menu-bg.png"> -->
+
+		<h2 class="section-titles">OUR MENU</h2>
+		<div class="menu-item">
+			<img class="menu-img" src="img/r1.png">
+			<table title="Tonkasu Ramen">
+				<caption>
+					<p>Tonkasu Ramen</p>
+				</caption>
+				<tbody>
 					<tr>
 						<td>CHICKEN</td>
 						<td>11,95€</td>
@@ -73,13 +76,15 @@
 						<td>SHRIMP</td>
 						<td>13,95€</td>
 					</tr>
-				</table>
-			</div>
-			<div class="menu-item">
-				<table title="Spicy Miso Ramen">
-					<caption>
-						<h3>Spicy Miso Ramen</h3>
-					</caption>
+				</tbody>
+			</table>
+		</div>
+		<div class="menu-item">
+			<table title="Spicy Miso Ramen">
+				<caption>
+					<p>Spicy Miso Ramen</p>
+				</caption>
+				<tbody>
 					<tr>
 						<td>CHICKEN</td>
 						<td>11,95€</td>
@@ -92,15 +97,17 @@
 						<td>SHRIMP</td>
 						<td>13,95€</td>
 					</tr>
-				</table>
-				<img class="menu-img" src="img/ramenbowl-3.png">
-			</div>
-			<div class="menu-item">
-				<img class="menu-img" src="img/ramenbowl-4.png">
-				<table title="Shio Ramen">
-					<caption>
-						<h3>Shio Ramen</h3>
-					</caption>
+				</tbody>
+			</table>
+			<img class="menu-img" src="img/r2.png">
+		</div>
+		<div class="menu-item">
+			<img class="menu-img" src="img/r3.png">
+			<table title="Shio Ramen">
+				<caption>
+					<p>Shio Ramen</p>
+				</caption>
+				<tbody>
 					<tr>
 						<td>CHICHEN</td>
 						<td>11,95€</td>
@@ -113,33 +120,40 @@
 						<td>SHRIMP</td>
 						<td>13,95€</td>
 					</tr>
-				</table>
-			</div>
+				</tbody>	
+			</table>
 		</div>
+
 	</div>
 
-	<div id="info-link" class="info">
+	<div id="info-link" class="info section">
 		<h2 class="section-titles">FIND US AT</h2>
-		<p>Kapuzinerstraße 31, München, BY 80337</p>
-		<img class="map-image" src="img/map-sakura.png">
+		<p class="raleway"><img src="img/LO.png" class="logo">Kapuzinerstraße 31, München, BY 80337</p>
 	</div>
 
-	<div id="footer-link" class="footer">
-		<div class="footer-logo">
-			<img src="img/sakura-logo1.png" class="navigation-bar-logo">
+	<img class="map-image" src="img/map-sakura.png">
+
+	<div id="footer-link" class="footer section">
+		<!-- <div class="footer-logo">
+			<img src="img/sakura-logo1.png" class="logo mr-32">
 			<p>SAKURA RAMEN</p>
-		</div>
+		</div> -->
+		<img src="img/saklogo.png" class="footer-logo">
+
+		<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+				href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 		<div class="footer-buttons">
+
 			<a href="https://www.facebook.com/sakuraramenbp">
-				<img src="img/fb.png" alt="Find us on Facebook" class="navigation-bar-logo">
+				<img src="img/fb.png" alt="Find us on Facebook" class="logo">
 			</a>
 			<a href="https://www.instagram.com/explore/locations/406270939765192/sakura-ramen-budapest?hl=de">
-				<img src="img/instagram.png" alt="Find us on instagram" class="navigation-bar-logo">
+				<img src="img/ins.png" alt="Find us on instagram" class="logo ml-32">
 			</a>
 			<a
 				href="https://www.tripadvisor.de/Restaurant_Review-g274887-d13373327-Reviews-Sakura_Ramen-Budapest_Central_Hungary.html">
-				<img src="img/tripadvisor.png" alt="Find us on Tripadvisor" class="navigation-bar-logo">
+				<img src="img/tripad.png" alt="Find us on Tripadvisor" class="logo ml-32">
 			</a>
 		</div>
 	</div>
